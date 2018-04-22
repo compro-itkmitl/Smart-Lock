@@ -1,0 +1,27 @@
+[debug] [2018-04-21T13:53:06.817Z] ----------------------------------------------------------------------
+[debug] [2018-04-21T13:53:06.820Z] Command:       D:\node js\node.exe C:\Users\Ped98\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase hosting:disable
+[debug] [2018-04-21T13:53:06.820Z] CLI Version:   3.18.4
+[debug] [2018-04-21T13:53:06.820Z] Platform:      win32
+[debug] [2018-04-21T13:53:06.820Z] Node Version:  v8.11.1
+[debug] [2018-04-21T13:53:06.820Z] Time:          Sat Apr 21 2018 20:53:06 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-04-21T13:53:06.820Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-21T13:53:06.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-04-21T13:53:06.830Z] > authorizing via signed-in user
+[debug] [2018-04-21T13:53:06.832Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-21T13:53:06.832Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NLguXUWSPCjZYGBescLvV2wU_q4d6h9thyN7qdTIfTwclxDwIkcTWUtruu3vD9Nk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Apr 21 2018 20:53:06 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-04-21T13:53:07.776Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-21T13:53:07.797Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/webauth-38bc1  
+  
+ Sat Apr 21 2018 20:53:07 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-04-21T13:53:08.954Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-21T13:53:08.956Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/webauth-38bc1/tokens  
+  
+ Sat Apr 21 2018 20:53:08 GMT+0700 (SE Asia Standard Time)
+[debug] [2018-04-21T13:53:10.023Z] <<< HTTP RESPONSE 200

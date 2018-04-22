@@ -9,7 +9,8 @@
 
 
 int LED = D1;
-int var = 0;
+int Voice = D3;
+
 void setup() {
   Serial.begin(250000);
   
@@ -24,6 +25,8 @@ void setup() {
   Serial.println(WiFi.localIP());
   
   pinMode(LED, OUTPUT);
+  pinMode(Voice, OUTPUT);
+  digitalWrite(Voice, HIGH);
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
   Firebase.setInt("status", 0); 
 }
@@ -35,6 +38,7 @@ void lighthigh(){
   delay(100);
   if (Firebase.getInt("status") != 0){
     digitalWrite(LED, 1);
+    digitalWrite(Voice, 0);
     delay(10000);
   }
 }
@@ -44,6 +48,7 @@ void lightlow(){
   if (Firebase.getInt("status") != 0){
     Firebase.setInt("status", 0);
     digitalWrite(LED, 0);
+    digitalWrite(Voice, 1);
   }
 }
 
