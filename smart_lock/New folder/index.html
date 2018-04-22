@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Smart Lock</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"> <!-- ดึงฟ้อนจาก google font -->
+  <link rel="stylesheet" href="style.css" /> <!-- ตกแต่งหน้า html -->
+</head>
+<body>
+
+  <div id="login_div" class="main-div"> <!-- login page -->
+    <h3>Smart Lock Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    <button onclick="login()">Login to Account</button>
+    <button onclick="forget()">Forget Password</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div"> <!-- user page -->
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button id="onBtn" onclick="on()">ON</button>
+    <button id="offBtn" onclick="off()">OFF</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> <!-- ใช้ firebase ในการ host,authentication,realtime database  -->
+  <script>
+    // โค่ดเชื่อเว็บกับ firebase
+    var config = {
+      apiKey: "AIzaSyAPADg7lNQaqP4Xa2VabGgZH4I2SWlmR4c",
+      authDomain: "webauth-38bc1.firebaseapp.com",
+      databaseURL: "https://webauth-38bc1.firebaseio.com",
+      projectId: "webauth-38bc1",
+      storageBucket: "webauth-38bc1.appspot.com",
+      messagingSenderId: "1099182187838"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
