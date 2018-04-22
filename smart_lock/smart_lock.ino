@@ -9,7 +9,7 @@
 
 
 int LED = D1;
-
+int var = 0;
 void setup() {
   Serial.begin(250000);
   
@@ -28,7 +28,22 @@ void setup() {
   Firebase.setInt("status", 0); 
 }
 void loop() {
-  digitalWrite(LED, Firebase.getInt("status"));
-  Firebase.setInt("status", 0);
-  delay(10000);
+  lighthigh();
+  lightlow();
 }
+void lighthigh(){
+  delay(100);
+  if (Firebase.getInt("status") != 0){
+    digitalWrite(LED, 1);
+    delay(10000);
+  }
+}
+
+void lightlow(){
+  delay(100);
+  if (Firebase.getInt("status") != 0){
+    Firebase.setInt("status", 0);
+    digitalWrite(LED, 0);
+  }
+}
+
