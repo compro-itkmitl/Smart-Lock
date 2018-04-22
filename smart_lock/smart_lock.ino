@@ -10,6 +10,7 @@
 
 int LED = D1;
 int Voice = D3;
+int i;
 
 void setup() {
   Serial.begin(250000);
@@ -38,8 +39,12 @@ void lighthigh(){
   delay(100);
   if (Firebase.getInt("status") != 0){
     digitalWrite(LED, 1);
-    digitalWrite(Voice, 0);
-    delay(10000);
+    for (i = 0; i <= 10; i = i+1){
+      digitalWrite(Voice, 0);
+      delay(1000);
+      digitalWrite(Voice, 1);
+      delay(1000);
+  }
   }
 }
 
@@ -48,7 +53,5 @@ void lightlow(){
   if (Firebase.getInt("status") != 0){
     Firebase.setInt("status", 0);
     digitalWrite(LED, 0);
-    digitalWrite(Voice, 1);
   }
 }
-
