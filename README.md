@@ -40,4 +40,4 @@
 
 |<a href=""><img src="pic/TeacherKitsuchart.png" width="100px"></a>  |<a href=""><img src="pic/TeacherPanwit.png" width="100px"></a>  |
 | :-: | :-: |
-|ผศ. ดร. กิติ์สุชาติ พสุภา|ผศ. ดร. ปานวิทย์ ธุวะนุติ|
+|ผศ. ดร. กิติ์สุชาต พสุภา|ผศ. ดร. ปานวิทย์ ธุวะนุติ|
